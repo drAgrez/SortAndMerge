@@ -35,7 +35,6 @@ namespace SortAndMerge
         {
             foreach (string path in Directory.GetFiles(Environment.CurrentDirectory, "split*.dat"))
             {
-                // я понимаю, что в этом месте можно немного оптимизировать, используя не лист, но я сделала по-простому
                 List<long> content = new List<long>();
                 // Чтение строк из файла
                 using (StreamReader sr = new StreamReader(path)) 
